@@ -26,9 +26,9 @@ def get_my_data (path_1, path_2):
 			my_data[-1]["ratio"] = []
 		else:
 			i += 1
-			if line.split()[2] != "nan":
-				my_data[-1]["fraction"].append(i)
-				my_data[-1]['ratio'].append(1/float(line.split()[2]))
+			rat = float(line.strip())
+			my_data[-1]["fraction"].append(i)
+			my_data[-1]['ratio'].append(rat)
 	data_list = []
 	for data in my_data:
 		for gene in data["gene"]:
