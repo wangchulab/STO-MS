@@ -82,8 +82,6 @@ for p in protein:
     index = []
     a = 0
     p['ratio'].append(0.0)
-    if p["symbol"] == "O00154":
-        print(p["ratio"])
     for r in p['ratio']:
         label = 0
         if r >= 0.1:
