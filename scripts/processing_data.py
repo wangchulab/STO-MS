@@ -76,9 +76,9 @@ def process_my_data(my_data_list):
         elif int(my_data['molecular_weight']) > 62000:
             dele.append(my_data)
             b += 1
-        elif predict_mw >= mw_upper_bound or predict_mw <= mw_lower_bound:
-            dele.append(my_data)
-            c += 1
+#        elif predict_mw >= mw_upper_bound or predict_mw <= mw_lower_bound:
+#            dele.append(my_data)
+#            c += 1
 #        xdata = my_data['fraction']
 #        ydata = my_data['ratio']
 #        plt.plot(xdata,ydata,'b')
